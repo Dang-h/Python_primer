@@ -14,4 +14,3 @@ class FirstSpiderItem(scrapy.Item):
     name = scrapy.Field()
     image = scrapy.Field()
     learned = scrapy.Field()
-    pass
