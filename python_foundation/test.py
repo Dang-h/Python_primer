@@ -7,13 +7,11 @@
 #Description:
 """
 
-def compute(base,value):
-    print(base, value)
-    base.append(value)
-    print(base)
+filename = input('Enter the file name: ')
 
-if __name__ == '__main__':
-    testlist = [1,2,3,4]
-    compute(testlist, 10)
-    compute(testlist, 20)
-
+with open(filename) as file:
+    count = 0
+    for line in file:
+        count += 1
+        print(line)
+    print('Lines:', count)
